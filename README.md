@@ -3,6 +3,9 @@ Trimmed Driver, NVCPL (NPI) &amp; further configuration.
 
 
 # NVIDIA Control Panel Configuration
+The following includes details of how the panel sets the changes and more, a lot of it is for informational purposes only.
+
+Sections:
 
 ## Desktop Settings
 
