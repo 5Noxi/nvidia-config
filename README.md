@@ -5,9 +5,27 @@ Trimmed Driver, NVCPL (NPI) &amp; further configuration.
 # NVIDIA Control Panel Configuration
 The following includes details of how the panel sets the changes and more, a lot of it is for informational purposes only.
 
-Sections:
+- [Desktop Options](https://github.com/5Noxi/nvidia-config#desktop-settings)
+- [Temporary NVCPL](https://github.com/5Noxi/nvidia-config#temporary-nvcpl)
+- 3D Settings
+  - [Adjust image settings with preview](https://github.com/5Noxi/nvidia-config#3d-settings--adjust-image-settings-with-preview)
+  - [Manage 3D settings](https://github.com/5Noxi/nvidia-config#3d-settings--manage-3D-settings)
+  - [Configure Surround, PhysX](https://github.com/5Noxi/nvidia-config#3d-settings--configure-surround-physx)
+- Display
+  - Change resolution
+  - [Adjust desktop color settings](https://github.com/5Noxi/nvidia-config#display--adjust-desktop-color-settings)
+  - [Rotate display](https://github.com/5Noxi/nvidia-config#display--rotate-display)
+  - View HDCP status
+  - Set up digital audio
+  - [Adjust desktop size and position](https://github.com/5Noxi/nvidia-config#display--adjust-desktop-size-and-position)
+  - Set up multiple displays
+- Developer
+  - [Manage GPU Performance Counters](https://github.com/5Noxi/nvidia-config#developer--manage-gpu-performance-counters)
+- Video
+  - [Adjust video color settings](https://github.com/5Noxi/nvidia-config#video--adjust-video-color-settings)
+  - [Adjust video image settings](https://github.com/5Noxi/nvidia-config#video--adjust-video-image-settings)
 
-## Desktop Settings
+## Desktop Options
 
 Enables `Enable Developer Settings`, disables `Add Dekstop Context Menu` and `Show Notification Tray Icon`:
 ```ps
@@ -30,7 +48,9 @@ reg add "HKLM\SOFTWARE\NVIDIA Corporation\NvTray" /v StartOnLogin /t REG_DWORD /
 
 ![](https://github.com/5Noxi/nvidia-config/blob/main/images/nvcpl1.png)  
 
-`3D Settings > Manage 3D settings` (More information - [discord notes](https://discord.com/channels/836870260715028511/1375059420970487838/1412446705869394071))
+## 3D Settings > Manage 3D settings
+
+More information - [discord notes](https://discord.com/channels/836870260715028511/1375059420970487838/1412446705869394071)
 - [NVIDIA Profile Inspector](https://github.com/Orbmu2k/nvidiaProfileInspector)  
 - [NVIDIA Profile Inspector (all settings)](https://github.com/Ixeoz/nvidiaProfileInspector-UNLOCKED)  
 - [Profile ReBar OFF](https://github.com/5Noxi/Files/releases/download/Fortnite/NV-ROFF.nip)  
