@@ -3,7 +3,9 @@ Trimmed Driver, NVCPL (NPI) &amp; further configuration.
 
 
 # NVIDIA Control Panel Configuration
-⠀
+
+## Desktop Settings
+
 Enables `Enable Developer Settings`, disables `Add Dekstop Context Menu` and `Show Notification Tray Icon`:
 ```ps
 reg add "HKCU\Software\NVIDIA Corporation\Global\NvCplApi\Policies" /v ContextUIPolicy /t REG_DWORD /d 0 /f
@@ -17,7 +19,9 @@ reg add "HKLM\SOFTWARE\NVIDIA Corporation\NvTray" /v StartOnLogin /t REG_DWORD /
 #define NV_REG_CPL_DEVTOOLS_VISIBLE       "NvDevToolsVisible"
 ```
 
-`NVDisplay.Container.exe` is required for nvcpl to start. [`NV-nvcpl.ps1`]() (included in `NVIDIA-Tool.ps1`) starts them, waits till you close the program, and then terminates them.
+## Temporary NVCPL
+
+`NVDisplay.Container.exe` is required for nvcpl to start. [`NV-nvcpl.ps1`](https://github.com/5Noxi/nvidia-config/blob/main/NV-nvcpl.ps1) (included in [`NVIDIA-Tool.ps1`](https://github.com/5Noxi/nvidia-config/blob/main/NVIDIA-Tool.ps1)) starts them, waits till you close the program, and then terminates them.
 
 ## 3D Settings > Adjust image settings with preview
 
@@ -80,7 +84,7 @@ Controls the `Digital vibrance`, decimal value = percentage. `MONITOR` depends o
 ```ps
 \Registry\Machine\SYSTEM\ControlSet001\Services\nvlddmkm\State\DisplayDatabase\MONITOR : HueRegistryKey
 ```
-`HueRegistryKey` controls the `Hue` options, it is a `REG_BINARY` type (`displayDB.cpp`):
+`HueRegistryKey` controls the `Hue` options, it is a `REG_BINARY` type ([`displayDB.cpp`](https://github.com/5Noxi/nvidia-config/blob/main/files/displayDB.cpp)):
 ```ps
 # 0°
 HKLM\System\CurrentControlSet\Services\nvlddmkm\State\DisplayDatabase\MSI3CB01222_2E_07E4_FF\HueRegistryKey    Type: REG_BINARY, Length: 20, Data: DB 01 00 00 14 00 00 00 10 27 00 00 00 00 00 00
