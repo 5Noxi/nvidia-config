@@ -168,16 +168,21 @@ reg add "HKLM\System\CurrentControlSet\Control\GraphicsDrivers\Configuration\MSI
 ## Developer > Manage GPU Performance Counters
 
 "GPU performance counters are used by NVIDIA GPU profiling tools such as NVIDIA Nsight. These tools enable developers debug, profile and develop software for NVIDIA GPUs."
-```h
-// Type DWORD
-// This regkey restricts profiling capabilities (creation of profiling objects
-// and access to profiling-related registers) to admin only.
-// 0 - (default - disabled)
-// 1 - Enables admin check
-//
-#define NV_REG_STR_RM_PROFILING_ADMIN_ONLY              "RmProfilingAdminOnly"
-#define NV_REG_STR_RM_PROFILING_ADMIN_ONLY_FALSE        0x00000000
-#define NV_REG_STR_RM_PROFILING_ADMIN_ONLY_TRUE         0x00000001
+```json
+{
+"Name":  "RmProfilingAdminOnly",
+"Comment":  [
+     "Type DWORD",
+     "This regkey restricts profiling capabilities (creation of profiling objects",
+     "and access to profiling-related registers) to admin only.",
+     "0 - (default - disabled)",
+     "1 - Enables admin check"
+ ],
+"Elements":  [
+      {"Name":  "FALSE","Value":  "0"},
+      {"Name":  "TRUE","Value":  "1"}
+  ]
+},
 ```
 Changing it via NVCPL:
 ```ps
