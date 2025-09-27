@@ -126,7 +126,7 @@ sin(0) = 0  = 0x00000000 hex
 - [nvDisplay.cpp#L293](https://github.com/pbatard/nvBrightness/blob/8f4a183532f1048375608fc70ad03c38652fc140/src/nvDisplay.cpp#L293)  
 - [displayDB.cpp](https://github.com/5Noxi/nvidia-config/blob/main/files/displayDB.cpp)  
 - [DesktopColors.cpp](https://github.com/5Noxi/nvidia-config/blob/main/files/DesktopColors.cpp)  
-- [DisplayDatabase Trace](https://github.com/5Noxi/nvidia-config/blob/main/files/display.txt) (snipped of [nvlddmkm](https://github.com/5Noxi/wpr-reg-records/blob/main/nvlddmkm.txt))  
+- [DisplayDatabase Trace](https://github.com/5Noxi/nvidia-config/blob/main/files/display.txt) (snipped of [nvlddmkm](https://github.com/5Noxi/wpr-reg-records/blob/main/records/nvlddmkm.txt))  
 
 ![](https://github.com/5Noxi/nvidia-config/blob/main/images/nvcpl3.png)  
 
